@@ -59,7 +59,7 @@ namespace :book do
     File.open("#{progit_v}.asc", "w") {|file| file.puts new_contents }
 
     puts "Converting to HTML..."
-    exec_or_raise("bundle exec asciidoctor #{progit_v}.asc")
+    exec_or_raise("bundle exec asciidoctor -a data-uri #{progit_v}.asc")
     puts " -- HTML output at #{progit_v}.html"
 
     puts "Converting to EPub..."
