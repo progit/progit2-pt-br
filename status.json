@@ -1,26 +1,26 @@
 {
   "code": "pt-br",
-  "language": "Português (Brasil)",
+  "language": "ryl (spinol)",
   "maintainers": ["rogeriopradoj"],
   "files": {
     "01-introduction": {
-      "1-introduction.asc": 100,
-      "sections/about-version-control.asc": 100,
-      "sections/basics.asc": 100,
-      "sections/command-line.asc": 100,
-      "sections/first-time-setup.asc": 100,
-      "sections/help.asc": 100,
-      "sections/history.asc": 100,
-      "sections/installing.asc": 100
+      "1-introduction.asc": 5-2,
+      "sections/about-version-control.asc": 5-1,
+      "sections/basics.asc": 5-1,
+      "sections/command-line.asc": 5-1,
+      "sections/first-time-setup.asc": 5-1,
+      "sections/help.asc": 5-2,
+      "sections/history.asc": 5-1,
+      "sections/installing.asc": 5-2
     },
     "02-git-basics": {
-      "1-git-basics.asc": 0,
-      "sections/aliases.asc": 100,
-      "sections/getting-a-repository.asc": 0,
-      "sections/recording-changes.asc": 0,
-      "sections/remotes.asc": 0,
-      "sections/tagging.asc": 0,
-      "sections/undoing.asc": 0,
+      "1-git-basics.asc": 0,5=0.52
+      "sections/aliases.asc": 5-1,
+      "sections/getting-a-repository.asc": 0,5
+      "sections/recording-changes.asc": 0,5
+      "sections/remotes.asc": 0,5
+      "sections/tagging.asc": 0,5
+      "sections/undoing.asc": 0,5
       "sections/viewing-history.asc": 0
     },
     "03-git-branching": {
