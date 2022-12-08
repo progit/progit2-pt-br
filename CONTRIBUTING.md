@@ -15,7 +15,7 @@ Se você nunca tiver feito isso, este [guia de fluxo (flow guide)](https://guide
 
 ## Grandes Reescritas
 
-Abra uma issue para discussão antes de começar. Essas alterações tendem a ser bem subjetivas, frequentemente esclarecendo coisas apenas para uma pequena porcentagem de pessoas e, raramente, valem a pena depois de tudo. Editores profissionais já revisaram este conteúdo múltiplas vezes. Assim, mesmo que você tenha, de alguma forma, um gosto superior ou gramática melhor do que a nossa, é difícil que sua texto venha a ser *tão* melhor que até valha a pena mudar grandes partes do projeto.
+Abra uma issue para discussão antes de começar. Essas alterações tendem a ser bem subjetivas, frequentemente esclarecendo coisas apenas para uma pequena porcentagem de pessoas e, raramente, valem a pena depois de tudo. Editores profissionais já revisaram este conteúdo múltiplas vezes. Assim, mesmo que você tenha, de alguma forma, um gosto superior ou gramática melhor do que a nossa, é difícil que seu texto venha a ser *tão* melhor que até valha a pena mudar grandes partes do projeto.
 
 ## Figuras
 
