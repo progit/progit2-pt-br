@@ -1,21 +1,21 @@
 {
-  "code": "pt-br",
-  "language": "Português (Brasil)",
-  "maintainers": ["rogeriopradoj"],
+  "code": "en",
+  "language": "English",
+  "maintainers": ["schacon"],
   "files": {
     "01-introduction": {
-      "1-introduction.asc": 100,
-      "sections/about-version-control.asc": 100,
-      "sections/basics.asc": 100,
-      "sections/command-line.asc": 100,
-      "sections/first-time-setup.asc": 100,
-      "sections/help.asc": 100,
-      "sections/history.asc": 100,
-      "sections/installing.asc": 100
+      "1-introduction.asc": 0,
+      "sections/about-version-control.asc": 0,
+      "sections/basics.asc": 0,
+      "sections/command-line.asc": 0,
+      "sections/first-time-setup.asc": 0,
+      "sections/help.asc": 0,
+      "sections/history.asc": 0,
+      "sections/installing.asc": 0
     },
     "02-git-basics": {
       "1-git-basics.asc": 0,
-      "sections/aliases.asc": 100,
+      "sections/aliases.asc": 0,
       "sections/getting-a-repository.asc": 0,
       "sections/recording-changes.asc": 0,
       "sections/remotes.asc": 0,
@@ -33,14 +33,14 @@
       "sections/workflows.asc": 0
     },
     "04-git-server": {
-      "1-git-server.asc": 100,
+      "1-git-server.asc": 0,
       "sections/generating-ssh-key.asc": 0,
       "sections/git-daemon.asc": 0,
       "sections/git-on-a-server.asc": 0,
       "sections/gitlab.asc": 0,
       "sections/gitweb.asc": 0,
       "sections/hosted.asc": 0,
-      "sections/protocols.asc": 100,
+      "sections/protocols.asc": 0,
       "sections/setting-up-server.asc": 0,
       "sections/smart-http.asc": 0
     },
@@ -107,15 +107,19 @@
     "A-git-in-other-environments": {
       "1-git-other-environments.asc": 0,
       "sections/bash.asc": 0,
-      "sections/eclipse.asc": 0,
       "sections/guis.asc": 0,
+      "sections/jetbrainsides.asc": 0,
       "sections/powershell.asc": 0,
+      "sections/sublimetext.asc": 0,
       "sections/visualstudio.asc": 0,
+      "sections/visualstudiocode.asc": 0,
       "sections/zsh.asc": 0
     },
     "B-embedding-git": {
       "1-embedding-git.asc": 0,
       "sections/command-line.asc": 0,
+      "sections/dulwich.asc": 0,
+      "sections/go-git.asc": 0,
       "sections/jgit.asc": 0,
       "sections/libgit2.asc": 0
     },
