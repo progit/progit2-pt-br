@@ -1,5 +1,5 @@
 [bugtraq]
-	url = https://github.com/progit/progit2/issues/%BUGID%
+	url = https://github.com/progit/progit2-pt-br/issues/%BUGID%
 	logregex = "(?:[Cc]lose[sd]?|[Ff]ix(?:e[sd])?|[Rr]esolve[sd]?):?\\s+(?:[Ii]ssues?\\s+#?|#)\\d+(?:(?:,|\\s+and)\\s+(?:[Ii]ssues?\\s+#?|#)\\d+)*\n(\\d+)"
 
 [tgit]
