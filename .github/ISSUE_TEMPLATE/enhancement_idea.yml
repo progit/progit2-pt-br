@@ -1,34 +1,34 @@
-name: Enhancement idea
-description: Suggest an idea for the ProGit2 book or repository
+name: Propor uma melhoria
+description: Sugira uma melhoria para a tradução ou para o repositório pt-BR
 labels: ["enhancement"]
 body:
   - type: textarea
     attributes:
-      label: General overview of your idea.
-      description: Give a general overview of your idea.
+      label: Visão geral da proposta
+      description: Descreva objetivamente a mudança sugerida.
     validations:
       required: true
 
   - type: textarea
     attributes:
-      label: What problem will this solve?
-      description: Explain what problem you're trying to solve.
+      label: Que problema isso resolve?
+      description: Explique por que a mudança seria útil para quem lê ou contribui.
     validations:
       required: true
 
   - type: textarea
     attributes:
-      label: Have you thought about other solutions?
-      description: Describe any alternative solutions to the problem.
+      label: Alternativas consideradas
+      description: Informe outras soluções avaliadas, se houver.
     validations:
       required: false
 
   - type: dropdown
     attributes:
-      label: Do you want to help with this enhancement idea?
+      label: Você gostaria de ajudar a implementar essa melhoria?
       options:
-        - "Yes"
-        - "Maybe"
-        - "No"
+        - "Sim"
+        - "Talvez"
+        - "Não"
     validations:
       required: true
