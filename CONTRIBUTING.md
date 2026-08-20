@@ -1,44 +1,88 @@
-# Contributing to Pro Git (2nd Edition)
+# Contribuindo com o Pro Git em português brasileiro
 
-## Licensing your work to us
+Obrigado por ajudar a tornar o Pro Git mais claro e útil para quem lê em português.
 
-When you open a pull request, you agree to provide your work under the [project license](LICENSE.asc).
-Also, you agree to grant such license of your work as is required for the purposes of future print editions to @ben and @schacon.
-Should your changes appear in a printed edition, you'll be included in the [contributors list](book/contributors.asc).
+## Licença e créditos
 
-## Signaling an Issue
+Ao abrir um pull request, você concorda em fornecer seu trabalho sob a [licença do projeto](LICENSE.asc).
+Você também concede a [Ben Straub](https://github.com/ben) e [Scott Chacon](https://github.com/schacon) a licença necessária para eventuais edições impressas.
+As contribuições incorporadas são reconhecidas na [lista de colaboradores](book/contributors.asc), gerada a partir do histórico Git.
 
-Search for similar issues, before creating a new issue.
+## Antes de começar
 
-Also, if this issue has been spotted on the git-scm.com site, cross-check that the issue is present in the pdf version.
-The issue may have already been corrected in the source files, but not yet deployed to the git-scm.com site.
+Procure uma issue ou um pull request que já trate do mesmo trecho.
+Para uma tradução extensa ou uma decisão de terminologia que afete várias seções, abra primeiro uma issue para combinar o trabalho.
 
-## Small Corrections
+A estrutura da tradução acompanha a edição inglesa em `progit/progit2`.
+Não renomeie arquivos, mova capítulos nem altere o build em um pull request de tradução.
+Quando a fonte inglesa mudar, a sincronização estrutural será feita separadamente pelos mantenedores.
 
-Errata and basic clarifications will be accepted if we agree that they improve the content.
-You can also open an issue so that we can discuss how or if the issue needs to be addressed.
+## Preparando seu fork
 
-If you've never done this before, the [flow guide](https://docs.github.com/en/get-started/quickstart/github-flow) might be useful.
+Crie um fork de `progit/progit2-pt-br`, clone-o e adicione o repositório canônico como remoto:
 
-## Large Rewrites
+```console
+git clone git@github.com:SEU_USUARIO/progit2-pt-br.git
+cd progit2-pt-br
+git remote add upstream https://github.com/progit/progit2-pt-br.git
+git fetch upstream
+git switch master
+git merge --ff-only upstream/master
+git switch -c traduzir-nome-da-secao
+```
 
-Open an issue for discussion before you start.
-A large rewrite tends to be very subjective, often only clarifying things for a small amount of readers.
-Professional copy editors have already reviewed this content multiple times.
-It's unlikely that your prose is going to be *so* much better that it's worth changing large portions of text.
+Depois de criar seus commits, envie o branch ao fork e abra um pull request contra `progit/progit2-pt-br:master`:
 
-## Figures
+```console
+git push -u origin traduzir-nome-da-secao
+```
 
-The images in this book are generated using [Sketch 3](https://www.sketch.com/), with the [included sketchbook file](diagram-source/progit.sketch).
+## Escopo dos pull requests
 
-To create a figure:
+Prefira um pull request por seção ou por bloco coerente.
+Um PR pequeno torna mais simples revisar o idioma, comparar com a fonte inglesa e reaproveitar a tradução quando a estrutura mudar.
 
-1. Add a page to the sketchbook.
-Use the included symbols wherever possible.
-2. Add a "slice" to your page.
-Name the slice so that it matches the destination PNG filename, relative from the root of the source directory.
-3. Set your slice to export at "800w".
+Em um PR de tradução:
 
-## Translations
+- traduza e revise a prosa, títulos, legendas e textos explicativos;
+- preserve IDs de âncoras, referências cruzadas, diretivas AsciiDoc, caminhos e nomes de arquivos;
+- não traduza comandos, opções, saídas de terminal, nomes de API ou código, salvo quando o próprio exemplo exigir texto localizado;
+- atualize apenas a porcentagem correspondente em `status.json`;
+- evite alterações de infraestrutura, imagens ou formatação sem relação com o trecho traduzido.
 
-If you want to contribute to translating Pro Git into your language, take a look at [TRANSLATING.md](TRANSLATING.md).
+Ferramentas de tradução automática ou IA podem ser usadas como apoio.
+Quem envia a contribuição continua responsável por revisar integralmente o resultado, conferir o sentido técnico e entregar português natural; traduções automáticas sem revisão não devem ser enviadas.
+
+## Título e descrição do pull request
+
+Escreva o título e a descrição principal em português.
+Ao final, inclua uma seção `English summary` com duas ou três frases para que administradores que não leem português entendam o escopo.
+
+Informe:
+
+- a seção ou os arquivos traduzidos;
+- o commit ou trecho inglês usado como referência;
+- as decisões terminológicas relevantes;
+- os comandos de validação executados.
+
+## Validação
+
+Antes de enviar, execute ao menos o build HTML:
+
+```console
+bundle install
+bundle exec rake book:build_html
+```
+
+Quando o ambiente permitir, execute o build completo:
+
+```console
+bundle exec rake book:build
+```
+
+Consulte o [README](README.asc) para os formatos disponíveis e as versões de ferramentas usadas pela CI.
+
+## Correções no texto original
+
+Se o problema também existir na edição inglesa, abra uma issue ou um pull request em [`progit/progit2`](https://github.com/progit/progit2).
+Depois que a correção for aceita lá, ela poderá ser sincronizada com esta tradução.
